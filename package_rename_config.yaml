@@ -1,0 +1,6 @@
+package_rename_config:
+  android:
+    app_name: EMI Calculator - Loan Planner
+    package_name: com.geekaid.emi
+    override_old_package:
+    lang: # (Optional) (String) The android development language {kotlin(default) or java}

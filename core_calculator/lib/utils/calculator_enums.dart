@@ -1,0 +1,5 @@
+
+enum TenureType{
+  years,
+  months,
+}
