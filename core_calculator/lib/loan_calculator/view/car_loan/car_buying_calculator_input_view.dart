@@ -52,9 +52,9 @@ class _CarBuyingCalculatorInputViewState extends State<CarBuyingCalculatorInputV
                   final amount = value.toAmountFromINR();
 
                   final error = validatorBuilder([
-                        () => Validators.requiredValidator(value),
-                        () => Validators.minimum(amount, min: 5000),
-                        () => Validators.maximum(amount, max: 20000000),
+                        () => Validators.required(value),
+                        () => Validators.minimum(amount,  5000),
+                        () => Validators.maximum(amount,  20000000),
                   ]);
 
                   return error;
@@ -73,9 +73,9 @@ class _CarBuyingCalculatorInputViewState extends State<CarBuyingCalculatorInputV
                 validator: (String? value) {
                   final rate = num.tryParse((value ?? '').replaceAll('%', ''));
                   final error = validatorBuilder([
-                        () => Validators.requiredValidator(value),
-                        () => Validators.minimum(rate, min: 6),
-                        () => Validators.maximum(rate, max: 40),
+                        () => Validators.required(value),
+                        () => Validators.minimum(rate,  6),
+                        () => Validators.maximum(rate,  40),
                   ]);
                   return error;
                 },
@@ -93,9 +93,9 @@ class _CarBuyingCalculatorInputViewState extends State<CarBuyingCalculatorInputV
                 validator: (String? value) {
                   final rate = num.tryParse((value ?? '').replaceAll('%', ''));
                   final error = validatorBuilder([
-                        () => Validators.requiredValidator(value),
-                        () => Validators.minimum(rate, min: 6),
-                        () => Validators.maximum(rate, max: 40),
+                        () => Validators.required(value),
+                        () => Validators.minimum(rate,  6),
+                        () => Validators.maximum(rate,  40),
                   ]);
                   return error;
                 },
@@ -124,15 +124,15 @@ class _CarBuyingCalculatorInputViewState extends State<CarBuyingCalculatorInputV
                   String? error;
                   if (_selectedTenureType == TenureType.years) {
                     error = validatorBuilder([
-                          () => Validators.requiredValidator(value),
-                          () => Validators.minimum(duration, min: 1),
-                          () => Validators.maximum(duration, max: 40),
+                          () => Validators.required(value),
+                          () => Validators.minimum(duration,  1),
+                          () => Validators.maximum(duration,  40),
                     ]);
                   } else {
                     error = validatorBuilder([
-                          () => Validators.requiredValidator(value),
-                          () => Validators.minimum(duration, min: 12),
-                          () => Validators.maximum(duration, max: 480),
+                          () => Validators.required(value),
+                          () => Validators.minimum(duration,  12),
+                          () => Validators.maximum(duration,  480),
                     ]);
                   }
 

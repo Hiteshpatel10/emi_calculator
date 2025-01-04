@@ -12,12 +12,12 @@ dependencies:
     sdk: flutter
 
   fl_chart: ^0.69.0
-  validator_forge: ^1.0.0
+  validator_forge: ^2.0.0
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
 
   core_utility:
-    path: /home/mhakaal10/Documents/GitHub/emi_calculator/core_utility
+    path: /home/hitesh-patel/Dev/github/emi_calculator/core_utility
 
 dev_dependencies:
   flutter_test:

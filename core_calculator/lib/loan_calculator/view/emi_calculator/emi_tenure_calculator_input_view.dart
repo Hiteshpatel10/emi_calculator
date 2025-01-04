@@ -48,9 +48,9 @@ class _EmiTenureCalculatorInputViewState extends State<EmiTenureCalculatorInputV
                   final emi = _emiController.text.toAmountFromINR(onNull: 5000);
 
                   final error = validatorBuilder([
-                    () => Validators.requiredValidator(value),
-                    () => Validators.minimum(amount, min: emi),
-                    () => Validators.maximum(amount, max: 20000000),
+                    () => Validators.required(value),
+                    () => Validators.minimum(amount,  emi),
+                    () => Validators.maximum(amount,  20000000),
                   ]);
 
                   return error;
@@ -69,9 +69,9 @@ class _EmiTenureCalculatorInputViewState extends State<EmiTenureCalculatorInputV
                 validator: (String? value) {
                   final rate = num.tryParse((value ?? '').replaceAll('%', ''));
                   final error = validatorBuilder([
-                    () => Validators.requiredValidator(value),
-                    () => Validators.minimum(rate, min: 6),
-                    () => Validators.maximum(rate, max: 40),
+                    () => Validators.required(value),
+                    () => Validators.minimum(rate,  6),
+                    () => Validators.maximum(rate,  40),
                   ]);
                   return error;
                 },
@@ -91,9 +91,9 @@ class _EmiTenureCalculatorInputViewState extends State<EmiTenureCalculatorInputV
                   final amount  = _amountController.text.toAmountFromINR(onNull: 100000);
 
                   final error = validatorBuilder([
-                        () => Validators.requiredValidator(value),
-                        () => Validators.minimum(emi, min: 100),
-                        () => Validators.maximum(emi, max: amount),
+                        () => Validators.required(value),
+                        () => Validators.minimum(emi,  100),
+                        () => Validators.maximum(emi,  amount),
                   ]);
 
                   return error;
