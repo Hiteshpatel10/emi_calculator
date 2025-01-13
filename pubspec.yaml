@@ -1,4 +1,4 @@
-name: emi_calculator
+name: com.geekaid.emi
 description: "emi"
 publish_to: 'none'
 version: 1.0.1+2
@@ -20,10 +20,13 @@ dependencies:
 
 
   core_utility:
-    path: /home/mhakaal10/Documents/GitHub/emi_calculator/core_utility
+    path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/core_utility
 
   core_calculator:
-    path: /home/mhakaal10/Documents/GitHub/emi_calculator/core_calculator
+    path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/core_calculator
+
+  branch_locator:
+    path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/branch_locator
 
   cupertino_icons: ^1.0.6
 
