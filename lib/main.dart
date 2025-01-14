@@ -1,7 +1,6 @@
 import 'package:branch_locator/util/locator_api_endpoints.dart';
 import 'package:branch_locator/util/locator_route_generator.dart';
 import 'package:branch_locator/util/locator_route_paths.dart';
-import 'package:core_calculator/utils/core_calculator_route_generator.dart';
 import 'package:core_utility/core_theme.dart';
 import 'package:core_utility/core_utility.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,18 +18,17 @@ final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<Scaffol
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: 'AIzaSyCdJoD0lKc_I-BmX9Gh6PigzjyHbo0Fygk',
-      appId: '1:393406614769:android:db3aa5f337004c98f36d50',
-      projectId: 'gita-sarathi',
-      messagingSenderId: '',
-    ),
-  );
+      // options: const FirebaseOptions(
+      //   apiKey: 'AIzaSyCdJoD0lKc_I-BmX9Gh6PigzjyHbo0Fygk',
+      //   appId: '1:393406614769:android:db3aa5f337004c98f36d50',
+      //   projectId: 'gita-sarathi',
+      //   messagingSenderId: '',
+      // ),
+      );
 
   await initGlobalKeys(navigatorKey, scaffoldMessengerKey, baseUrl: LocatorApiEndpoints.base);
 
-
-  FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(kDebugMode);
+  FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
   FlutterError.onError = (errorDetails) {
     FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
   };
@@ -59,10 +57,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: LocatorRoutePaths.landing,
         onGenerateRoute: (settings) {
-
           return RouteGenerator.buildRouteGenerator(settings, {
             "/locator": locatorRouteGenerator(settings),
-            "/calculator": coreCalculatorRouteGenerator(settings),
+            // "/calculator": coreCalculatorRouteGenerator(settings),
           });
         },
         theme: CoreAppTheme.theme(context),

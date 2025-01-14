@@ -1,5 +1,5 @@
-name: com.geekaid.emi
-description: "emi"
+name: com.geekaid.ifscode
+description: "IFSC CODE SEARCH"
 publish_to: 'none'
 version: 1.0.1+2
 
@@ -22,8 +22,8 @@ dependencies:
   core_utility:
     path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/core_utility
 
-  core_calculator:
-    path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/core_calculator
+#  core_calculator:
+#    path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/core_calculator
 
   branch_locator:
     path: /Users/user/Documents/hp/GITHUB/geek_app_lab_packages/branch_locator

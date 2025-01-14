@@ -1,5 +1,4 @@
 import 'package:branch_locator/util/locator_route_generator.dart';
-import 'package:core_calculator/utils/core_calculator_route_generator.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -29,26 +28,26 @@ class RouteGenerator {
     );
   }
 
-  static Route<dynamic> generateRoute(RouteSettings settings) {
-    args = settings.arguments;
-
-    debugPrint("Navigation => RouteGenerator > ${settings.name}\narguments: $args");
-
-    if (settings.name?.contains('calculator-') == true) {
-      return coreCalculatorRouteGenerator(settings);
-    }
-
-    if (settings.name?.contains('locator-') == true) {
-      return locatorRouteGenerator(settings);
-    }
-
-    switch (settings.name) {
-      // ------------------------------------------- AUTH -----------------------------------------------
-
-      default:
-        return _errorRoute();
-    }
-  }
+  // static Route<dynamic> generateRoute(RouteSettings settings) {
+  //   args = settings.arguments;
+  //
+  //   debugPrint("Navigation => RouteGenerator > ${settings.name}\narguments: $args");
+  //
+  //   if (settings.name?.contains('calculator-') == true) {
+  //     return coreCalculatorRouteGenerator(settings);
+  //   }
+  //
+  //   if (settings.name?.contains('locator-') == true) {
+  //     return locatorRouteGenerator(settings);
+  //   }
+  //
+  //   switch (settings.name) {
+  //     // ------------------------------------------- AUTH -----------------------------------------------
+  //
+  //     default:
+  //       return _errorRoute();
+  //   }
+  // }
 
   // error screen
   static Route<dynamic> _errorRoute() {

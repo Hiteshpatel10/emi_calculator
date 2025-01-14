@@ -33,7 +33,7 @@ if (keystorePropertiesFile.exists()) {
 
 
 android {
-    namespace = "com.geekaid.emi"
+    namespace = "com.geekaid.ifsccode"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.geekaid.emi"
+        applicationId = "com.geekaid.ifsccode"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode = flutterVersionCode.toInteger()
