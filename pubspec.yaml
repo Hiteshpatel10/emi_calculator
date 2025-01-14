@@ -1,7 +1,7 @@
 name: emi_calculator
 description: "emi"
 publish_to: 'none'
-version: 1.0.1+2
+version: 1.0.0+1
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -20,10 +20,13 @@ dependencies:
 
 
   core_utility:
-    path: /home/hitesh-patel/Dev/github/emi_calculator/core_utility
+    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_utility
 
-  core_calculator:
-    path: /home/hitesh-patel/Dev/github/emi_calculator/core_calculator
+  branch_locator:
+    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/branch_locator
+
+  # core_calculator:
+  #   path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator
 
   cupertino_icons: ^1.0.6
 
