@@ -36,35 +36,6 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:393406614769:android:21935277ba9b5241f36d50",
-        "android_client_info": {
-          "package_name": "com.geekaid.ifsccode"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "393406614769-2ugl92fg2n2dkio0h3jv4n7pls39ien7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCdJoD0lKc_I-BmX9Gh6PigzjyHbo0Fygk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "393406614769-2ugl92fg2n2dkio0h3jv4n7pls39ien7.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:393406614769:android:2dc622a37a64da1df36d50",
         "android_client_info": {
           "package_name": "com.gitasarathi"

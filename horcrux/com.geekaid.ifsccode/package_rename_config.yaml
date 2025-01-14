@@ -1,0 +1,7 @@
+package_rename_config:
+  android:
+    app_name: IFSC Finder - All Indian Banks
+    package_name: com.geekaid.ifsccode
+    override_old_package:
+    lang:
+
