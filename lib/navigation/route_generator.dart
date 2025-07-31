@@ -1,4 +1,4 @@
-import 'package:branch_locator/util/locator_route_generator.dart';
+// import 'package:branch_locator/util/locator_route_generator.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {

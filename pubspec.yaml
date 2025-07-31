@@ -22,11 +22,11 @@ dependencies:
   core_utility:
     path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_utility
 
-  branch_locator:
-    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/branch_locator
+  # branch_locator:
+  #   path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/branch_locator
 
-  # core_calculator:
-  #   path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator
+  core_calculator:
+    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator
 
   cupertino_icons: ^1.0.6
 

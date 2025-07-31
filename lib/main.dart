@@ -1,14 +1,14 @@
-import 'package:branch_locator/util/locator_api_endpoints.dart';
-import 'package:branch_locator/util/locator_route_generator.dart';
-import 'package:branch_locator/util/locator_route_paths.dart';
+
+import 'package:core_calculator/utils/core_calculator_bloc_init.dart';
+import 'package:core_calculator/utils/core_calculator_route_generator.dart';
 import 'package:core_utility/core_theme.dart';
 import 'package:core_utility/core_utility.dart';
+import 'package:core_utility/navigation/core_calculator_routes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:branch_locator/util/locator_bloc_init.dart';
 
 import 'navigation/route_generator.dart';
 
@@ -26,7 +26,7 @@ void main() async {
       // ),
       );
 
-  await initGlobalKeys(navigatorKey, scaffoldMessengerKey, baseUrl: LocatorApiEndpoints.base);
+  await initGlobalKeys(navigatorKey, scaffoldMessengerKey, baseUrl: '');
 
   FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
   FlutterError.onError = (errorDetails) {
@@ -47,19 +47,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        // ...coreCalculatorBlocInit(),
-        ...locatorBlocInit(),
+        ...coreCalculatorBlocInit(),
+        // ...locatorBlocInit(),
       ],
       child: MaterialApp(
         title: 'EMI Calculator',
         scaffoldMessengerKey: scaffoldMessengerKey,
         navigatorKey: navigatorKey,
         debugShowCheckedModeBanner: false,
-        initialRoute: LocatorRoutePaths.landing,
+        initialRoute: CoreCalculatorRoutes.emiHome,
         onGenerateRoute: (settings) {
           return RouteGenerator.buildRouteGenerator(settings, {
-            "/locator": locatorRouteGenerator(settings),
-            // "/calculator": coreCalculatorRouteGenerator(settings),
+            // "/locator": locatorRouteGenerator(settings),
+            "/calculator": coreCalculatorRouteGenerator(settings),
           });
         },
         theme: CoreAppTheme.theme(context),
