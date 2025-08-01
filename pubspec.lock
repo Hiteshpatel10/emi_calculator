@@ -92,14 +92,14 @@ packages:
   core_calculator:
     dependency: "direct main"
     description:
-      path: "/home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator"
+      path: "/Users/user/hp/github/geek_app_lab_packages/core_calculator"
       relative: false
     source: path
     version: "0.0.1"
   core_utility:
     dependency: "direct main"
     description:
-      path: "/home/hitesh-patel/Dev/github/geek_app_lab_packages/core_utility"
+      path: "/Users/user/hp/github/geek_app_lab_packages/core_utility"
       relative: false
     source: path
     version: "0.0.1"
@@ -252,6 +252,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
+  flutter_staggered_grid_view:
+    dependency: transitive
+    description:
+      name: flutter_staggered_grid_view
+      sha256: "19e7abb550c96fbfeb546b23f3ff356ee7c59a019a651f8f102a4ba9b7349395"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -563,6 +571,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  smooth_corner:
+    dependency: transitive
+    description:
+      name: smooth_corner
+      sha256: "1e920cffd9644d6f51f9a99674652f8c00f2e9074b275f3edde0de1441ba78e9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   source_span:
     dependency: transitive
     description:
