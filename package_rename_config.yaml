@@ -1,7 +1,7 @@
 package_rename_config:
   android:
-    app_name: EMI Calculator - Loan Planner
-    package_name: com.geekaid.emi
+    app_name: IFSC SEARCH
+    package_name: com.geekaid.ifsccode
     override_old_package:
     lang:
 

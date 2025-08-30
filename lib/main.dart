@@ -1,11 +1,10 @@
-
-import 'package:core_calculator/home_module/view/calculator_my_app.dart';
+import 'package:branch_locator/branch_locator_app.dart';
+import 'package:branch_locator/util/locator_api_endpoints.dart';
 import 'package:core_utility/core_utility.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -13,7 +12,7 @@ final GlobalKey<ScaffoldMessengerState> scaffoldMessengerKey = GlobalKey<Scaffol
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  await initGlobalKeys(navigatorKey, scaffoldMessengerKey, baseUrl: '');
+  await initGlobalKeys(navigatorKey, scaffoldMessengerKey, baseUrl: LocatorApiEndpoints.base);
 
   FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(!kDebugMode);
   FlutterError.onError = (errorDetails) {
@@ -24,6 +23,5 @@ void main() async {
     return true;
   };
 
-  runApp(const CalculatorMyApp());
+  runApp(const BranchLocatorApp());
 }
-

@@ -1,7 +1,7 @@
 name: emi_calculator
 description: "emi"
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+3
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -24,12 +24,12 @@ dependencies:
     path: /Users/user/hp/github/geek_app_lab_packages/core_utility
 
 
-  # branch_locator:
-  #   path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/branch_locator
+  branch_locator:
+     path: /Users/user/hp/github/geek_app_lab_packages/branch_locator
 
-  core_calculator:
-#    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator
-    path: /Users/user/hp/github/geek_app_lab_packages/core_calculator
+#  core_calculator:
+##    path: /home/hitesh-patel/Dev/github/geek_app_lab_packages/core_calculator
+#    path: /Users/user/hp/github/geek_app_lab_packages/core_calculator
 
 
   cupertino_icons: ^1.0.6
@@ -43,8 +43,6 @@ dev_dependencies:
 
 
 flutter:
-
   uses-material-design: true
 
-  assets:
-    - assets/icons/
+

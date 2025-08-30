@@ -72,6 +72,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "393406614769-141ik9d240ncqugp9tcoh1l9tiag6mpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gitasarathi",
+            "certificate_hash": "8986a91534249d6685dc698d82657c99c645ff8e"
+          }
+        },
+        {
           "client_id": "393406614769-1kq03odgtcg21c30097vidf6uorui7fq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -85,6 +93,14 @@
           "android_info": {
             "package_name": "com.gitasarathi",
             "certificate_hash": "c9d94f2a308c0b7e108b8a62bd303fa89c8978a8"
+          }
+        },
+        {
+          "client_id": "393406614769-rgvnrqd9gelqlbsbati6sopg0n0f8n3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gitasarathi",
+            "certificate_hash": "ec8035a1ca7dc4ac5560e724ccd38062f8a2c8ae"
           }
         },
         {

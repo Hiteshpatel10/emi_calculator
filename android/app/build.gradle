@@ -46,7 +46,7 @@ android {
     defaultConfig {
         applicationId = "com.geekaid.ifsccode"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
